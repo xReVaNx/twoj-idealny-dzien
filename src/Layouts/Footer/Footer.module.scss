@@ -1,0 +1,29 @@
+@import "../../Assets/Styles/colors";
+
+.container {
+  width: 100vw;
+  height: 30vh;
+  margin-bottom: 40px;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 100px;
+
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: $text-color;
+      text-decoration: underline;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

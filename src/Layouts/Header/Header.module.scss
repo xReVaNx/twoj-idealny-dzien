@@ -1,0 +1,8 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  background: url('../../Assets/Images/pexels-cottonbro-4255484.jpg');
+  filter: saturate(0.6) blur(1.5px);
+  overflow: hidden;
+  background-size: cover;
+}

@@ -1,0 +1,69 @@
+@import "../../Assets/Styles/colors";
+
+.container {
+  width: 180%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 700px;
+    height: 525px;
+
+    .cardFront {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      backface-visibility: hidden;
+      position: absolute;
+      z-index: 2;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .cardBack {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, $primary-color 30%, #ca8ac7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      transform: rotateY(180deg);
+      position: absolute;
+      z-index: 1;
+
+      .details {
+        width: 90%;
+        height: 100%;
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 32px;
+
+        .detail {
+          width: 80%;
+          border-bottom: 1px solid $text-color;
+          text-align: center;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flip {
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 100px 0;
+
+  .BookOfferBox {
+    display: flex;
+    width: 80%;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

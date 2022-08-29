@@ -1,0 +1,17 @@
+@import "../../Assets/Styles/colors";
+
+.swiper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.swiper-button-prev) {
+  color: $primary-color;
+}
+
+:global(.swiper-button-next) {
+  color: $primary-color;
+}

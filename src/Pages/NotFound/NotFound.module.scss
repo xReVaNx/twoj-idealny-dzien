@@ -1,0 +1,71 @@
+@import "../../Assets/Styles/colors";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-direction: column;
+
+  h1 {
+    font-size: 128px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+  }
+
+  .errorDescription {
+    width: 570px;
+    background-color: $primary-color;
+    height: 150px;
+    border: 1px solid gray;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 60px 60px 60px 0;
+    box-shadow: 2px 2px 5px 2px gray;
+    margin-right: 100px;
+  }
+
+  .return {
+    margin-top: 40px;
+    width: 400px;
+    height: 100px;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    font-size: 34px;
+    border: 1px solid gray;
+    border-radius: 60px 60px 0 60px;
+    box-shadow: 2px 2px 5px 2px gray;
+    margin-left: 300px;
+
+    a {
+      color: #eb68c0;
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 450px;
+
+    &:first-of-type {
+      left: 250px;
+      transform: rotate(20deg);
+    }
+
+    &:last-of-type {
+      right: 250px;
+      transform: rotate(-20deg) scaleX(-1);
+    }
+  }
+}

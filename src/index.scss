@@ -1,10 +1,24 @@
+@import "/src/Assets/Styles/colors";
+
+html {
+  background-color: $text-color !important;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  color: $primary-color !important;
+  background-color: $text-color !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 code {
