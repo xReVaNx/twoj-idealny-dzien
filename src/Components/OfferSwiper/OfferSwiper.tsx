@@ -1,6 +1,6 @@
 import { Swiper } from "swiper/react";
 import style from "./OfferSwiper.module.scss";
-import { Navigation, Pagination, EffectCube, Autoplay } from "swiper";
+import { Navigation, EffectCube, Autoplay } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/autoplay";
@@ -21,7 +21,6 @@ const OfferSwiper = (props: any) => {
       autoplay={{
         delay: 2500,
       }}
-      // loop={true}
       spaceBetween={50}
       slidesPerView={1}
       navigation

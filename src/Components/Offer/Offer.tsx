@@ -2,19 +2,11 @@ import style from "./Offer.module.scss";
 import cardStyle from "../OfferCard/OfferCard.module.scss";
 import { Button } from "@nextui-org/react";
 import OfferCard from "../OfferCard/OfferCard";
-import { useNavigate } from "react-router-dom";
 
 import { EventCategory } from "../../Data/data";
 
 const Offer = (props: any) => {
   const Category = EventCategory.find((x) => x.name === props.name);
-  const imageUrl = Category.imgUrl;
-
-  let navigate = useNavigate();
-
-  // const handleClick = (event: any, link: any) => {
-  //   navigate(`/oferta/${link}`);
-  // };
 
   const handleClick = () => {
     const el = document.getElementById(Category.key);

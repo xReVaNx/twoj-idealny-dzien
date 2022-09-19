@@ -1,4 +1,13 @@
-.container{
-    width: 100vw;
-    padding-top: 100px;
+.container {
+  width: 100vw;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    width: 35%;
+  }
 }
